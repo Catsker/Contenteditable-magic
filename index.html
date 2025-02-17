@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Edit the content</title>
+</head>
+<body>
+   <style contenteditable>
+      /* Этот сайт можно редактировать как угодно */
+      
+      body {
+         font-family: Consolas;
+         font-size: 1.5vw;
+
+         color: blue;   /* попробуй например поменять цвет текста */
+      }
+      
+      style {
+         display: block;
+         width: 80%;
+         margin: 0 auto;
+         border: 0.15em dashed blue;   /* или границу */
+         border-radius: 1em;
+         outline: none;
+         white-space: pre-wrap;
+         caret-color: blue;
+      }
+
+      style:focus {
+         border-style: solid;
+      }
+   </style>
+</body>
+</html>
